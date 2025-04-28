@@ -22,10 +22,10 @@ services:
     container_name: inkar-suki
     restart: always
     volumes:
-      - ./inkar-suki/config/config.yml:/app/src/config/config.yml
-      - ./inkar-suki/data:/app/src/data
-      - ./inkar-suki/const/cache:/app/src/const/cache
-      - ./inkar-suki/cache:/app/src/cache
+      - ./config/config.yml:/app/src/config/config.yml
+      - ./data:/app/src/data
+      - ./const/cache:/app/src/const/cache
+      - ./cache:/app/src/cache
       - ./ntqq:/app/.config/QQ
     networks:
       - inkar_network
