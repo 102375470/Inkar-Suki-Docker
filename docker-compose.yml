@@ -5,6 +5,7 @@ services:
     environment:
       - NAPCAT_UID=${NAPCAT_UID:-1000}
       - NAPCAT_GID=${NAPCAT_GID:-1000}
+      - MODE=inkar-suki
     ports:
       - 6099:6099
     container_name: napcat
